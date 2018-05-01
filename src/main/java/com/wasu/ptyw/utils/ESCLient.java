@@ -24,7 +24,7 @@ public class ESCLient {
                     .put("client.transport.sniff","true")
                     .build();
             transportClient = new PreBuiltTransportClient(settings)
-                                 .addTransportAddress(new TransportAddress(InetAddress.getByName("192.168.1.109"), 9301));
+                                 .addTransportAddress(new TransportAddress(InetAddress.getByName("192.168.1.109"), 9300));
         }catch(Exception e){
             transportClient.close();
             logger.error(e.getMessage());
